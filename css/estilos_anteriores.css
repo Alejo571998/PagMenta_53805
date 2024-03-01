@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    font-family: 'Albert Sans', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    padding-top: 10px;
+    height: 100vh;
+    width: 100%;
+    background-image: url(../assets/img/fondoV.jpg);
+    background-size: cover;
+    background-position: center;
+    .navHeader{
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 250px;
+        .padreLogo{
+            width: 28%;
+            margin-left: 15px;
+    
+            .logo {
+                width: 70px;
+    
+            }
+            
+        }
+        .listaNav{
+            list-style: none;
+            display: flex;
+            column-gap: 20px;
+            .linkNav{
+                color: rgb(0, 0, 0);
+                text-decoration: none;
+                font-size: 1rem;
+                font-weight: 700;
+                padding: 10px;
+                text-transform: uppercase;
+                &:hover{
+                    box-shadow: 0px 4px 8px rgba(rgb(84, 84, 84));
+                    border-radius: 7px;
+                    
+                }
+            }
+        }
+    }
+    .seccionTitulo{
+        width: 80%;
+        color: white;
+        position: relative;
+        top: 120px;
+        left: 50px;
+        h1{
+            font-size: 3rem;
+            font-weight: 200;
+            .estiloTitulo{
+                font-size: 4rem;
+                font-weight:600 ;
+            }
+        }
+        .parrafoPrincipal{
+            font-size: 1.1rem;
+            font-weight: 200;
+            line-height: 1.5rem;
+        }
+        .linkContactameIndex{ 
+            box-sizing: content-box;
+            display: inline-block;
+            background-color: transparent;
+            width: 120px;
+            color: #ffffff;
+            text-decoration: none;
+            border: 1px solid white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 30px;
+        }
+    }
+}
+
+.grillaJuegos{
+    display: grid ;
+    margin: 0;
+    text-align: center;
+    .tituloJuego{
+        text-align: center;
+        font-size: 2rem;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: rgb(67, 58, 58);
+        text-transform: uppercase;
+    }
+    .finJuegos{
+        text-align: center;
+        font-size: 2rem;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: rgb(67, 58, 58);
+        text-transform: uppercase;
+    }
+    .contenedorJuegos{
+        text-align: center;
+        font-size: 2rem;
+        padding-top: 20px;
+        background-color: black;
+        color: white;
+        text-transform: uppercase; 
+        width: 200px;
+        height: 200px;    
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+}
+.seccionTarjeta{
+    margin: 0;
+    text-align: center;
+    background-image: url(../assets/img/fondocanva.jpg);
+    background-size: cover;
+    background-position: center;
+
+    .tituloSeccionTarjetas{
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 20px;
+    color: white;
+    text-transform: uppercase;
+    }
+    .contenedorTarjetas{
+         display:flex;
+         color: white;
+         justify-content: space-around;
+         column-gap: 20px;
+         .tarjeta{
+            width: 200px;
+            height: 200px;
+            background-color: transparent;
+            color: rgb(255, 249, 249);
+            padding: 20px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+
+            .textoDondevengo{
+                text-decoration: none;
+                list-style: none;
+                color: white;
+            }
+            .textoDondevoy{
+                text-decoration: none;
+                list-style: none;
+                color: white;
+            }
+            .textoTitulo{
+                text-decoration: none;
+                list-style: none;
+                color: white;
+            }
+         }
+
+         
+    }
+}
+
+.footer{
+    padding-top:40px;
+    grid-area: footer;
+    background-color: rgb(28, 28, 28);
+    .contenedorFooter{
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 10px;
+        a{
+            color: gray;
+            text-decoration: none;
+        }
+        h2,h3,h4{
+            color: rgb(8, 194, 24);
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        ul{
+            list-style: none;
+            li{
+                margin-bottom: 10px;
+            }
+        }
+        form{
+            display:flex;
+           
+            input[type="email"]{
+                padding: 0 15px;
+                max-width: 100%;
+                width: 100%;
+                height: 42px;
+                border: 2px solid rgba(129,129,129,.2);
+                border-radius: 0;
+                background-color: transparent;
+                box-shadow: none;
+                vertical-align: middle;
+                font-size: 0.8rem;
+              
+            }
+            
+            input[type="submit"]{
+                padding: 12px 20px;
+                font-size: 0.8rem;
+                line-height: 18px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                border-width: 0;
+                border-style: solid;
+                border-color: transparent;
+                border-radius: 0;
+                vertical-align: middle;
+                text-align: center;
+                text-transform: uppercase;
+                letter-spacing: .3px;
+                font-weight: 400;
+            }
+
+        }
+        .comunicateVerme{
+            flex-direction: column;
+            text-align: center;
+            .dondeVerme{
+                margin-top: 10px;
+            }
+        }
+        .mentaFooter{
+            width: 100px;
+        }
+        .fa-twitch{
+            color: purple;
+            font-size: 4rem;
+            position: fixed;
+            bottom: 20px;
+            right: 10px;
+        }  
+    }
+    .copy{
+        margin-top: 10px;
+        p{
+            text-align: center;
+            font-weight: 300s;
+            font-size: 0.8rem;
+            color: rgb(255, 255, 255)
+        }
+    }
+}
+
+        
+       
+    
+       
+
+
+
+
+
+
