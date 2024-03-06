@@ -21,7 +21,7 @@
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <div class="listNav collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-center">
                   <li class="nav-item">
                     <a class="nav-link text-uppercase" aria-current="page" href="#">Inicio</a>
@@ -41,30 +41,30 @@
               </div>
           </nav>
         <section class="">
-            <H1 class="tituloPrincipal"> Este es..<br><span class="text-uppercase">El Mundo de Menta</span></H1>
+            <H1 class="tituloPrincipal col justify-content-center"> Este es..<br><span class="text-uppercase">El Mundo de Menta</span></H1>
             <p class="parrafoPrincipal">Bienvenido/a a mi pagina, aca vas a encontrar quien soy, que hago y quien es mi amo (a quien van a conocer mas adelante), contenido gaming de todo tipo no siendo el mejor jugador pero si el que mas tryhard en morir y fallar balas!             Espero te diviertas al conocerme y ver todo lo que tengo para oferecerte querido Mentolfo.</p>
             <a class="linkContactameIndex" href="./pages/contactame.html">CONTACTAME</a>
         </section>
     </header>
-    <main class="mainIndex container">
-        <section>
-            <h3 class="p-3 text-center text-uppercase"> Lo que juego cuando juego</h3>
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="./assets/img/apexlogo.jpg" class="d-block w-100" alt="apexLegends">
+    <main class="mainIndex container-fluid">
+        <section class="seccionCarrusel row justify-content-center align-items-center mb-5 text-uppercase">
+            <h3 class="tituloCarrusel mt-3 text-center text-uppercase"> Lo que juego cuando juego</h3>
+            <div id="carouselExampleControls" class="carousel slide carousel-dark  w-50 " data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/img/apexlogo.jpg" class="d-block w-100 rounded" alt="apexLegends">
                   </div>
                   <div class="carousel-item">
-                    <img src="./assets/img/Huntlogo.jpg" class="d-block w-100" alt="huntShowdown">
+                    <img src="./assets/img/Huntlogo.jpg" class="d-block w-100 rounded" alt="huntShowdown">
                   </div>
                   <div class="carousel-item">
-                    <img src="./assets/img/overwatchlogo.png" class="d-block w-100" alt="overwatch">
+                    <img src="./assets/img/overwatchlogo.png" class="d-block w-100 rounded" alt="overwatch">
                   </div>
                   <div class="carousel-item">
-                    <img src="./assets/img/lethalcompanylogo.webp" class="d-block w-100" alt="lethalCompany">
+                    <img src="./assets/img/lethalcompanylogo.webp" class="d-block w-100 rounded" alt="lethalCompany">
                   </div>
                   <div class="carousel-item">
-                    <img src="./assets/img/gtalogo.jpg" class="d-block w-100" alt="gta">
+                    <img src="./assets/img/gtalogo.jpg" class="d-block w-100 rounded" alt="gta">
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -76,47 +76,39 @@
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
-              <h4 class="p-3 text-center">..y tambien muchos juegos mas..</h4>
+              <h4 class="subTituloCarrusel p-3 text-center text-uppercase">..y tambien muchos juegos mas..</h4>
         </section>
-        <!-- 
-        <section class="grillaJuegos">
-            <h3 class="tituloJuego"> Lo que juego cuando juego</h3>
-            <div class="contendorJuegos">
-                <img class="apex" src="./assets/img/ApexLogo.jpg" alt="apexLegends">
-                <img class="hunt" src="./assets/img/huntShowdown.jpg" alt="huntShowdown">
-                <img class="overwatch" src="./assets/img/overwatch.jpg" alt="Overwatch">
-                <img class="lethal" src="./assets/img/lethalCompany.jpg" alt="lethalCompany">
-                <img class="gta" src="./assets/img/GTAV.jpg" alt="gta">
-             </div>
-            <h4 class="finJuegos">..y muchos juegos mas..</h4>
-        </section> -->
-        <section class="seccionTarjeta">
-            <h3 class="tituloSeccionTarjetas">Hola,llegaste hasta aca! ¿Donde podes ir?</h3>
-            <div class="contenedorTarjetas">
-                <section  class="tarjeta">
-                    <a href="./pages/de_donde_vengo.html">
-                        <img class=imgTarjeta src="./assets/img/Dedondevengo.png" alt="deDondevengo">
-                    <h4 class="textoDondevengo">Quien soy yo?</h4>
-                    </a>
-                </section>
-                <section class="tarjeta">
-                    <a href="./pages/hacia_donde_voy.html">
-                        <img class=imgTarjeta src="./assets/img/Haciadondevoy.png" alt="haciaDondevoy">
-                    <h4 class="textoDondevoy">Streaming</h4>
-                    </a>
-                </section>
-                <section class="tarjeta">
-                    <a href="./pages/tienda.html">
-                        <img class=imgTarjeta src="./assets/img/Tienda (1).png" alt="Tienda">
-                    <h4 class= "textoTitulo">Tienda</h4>
-                    </a>  
-                </section>
+        <section>
+          <div class="card-group">
+            <div class="card">
+              <a href="./pages/de_donde_vengo.html">
+                <img src="./assets/img/Dedondevengo.png" class="card-img-top" alt="deDondeVengo">
+                <div class="card-body"> 
+                  <h5 class="card-title">De Donde Vengo</h5>
+              </a>
+              </div>
             </div>
+            <div class="card">
+              <a href="./pages/hacia_donde_voy.html"> 
+                <img src="./assets/img/Haciadondevoy.png" class="card-img-top" alt="haciaDondeVoy">
+              <div class="card-body">
+                <h5 class="card-title">Hacia Donde voy</h5>
+              </div>
+              </a>
+            </div>
+            <div class="card">
+              <a href="./pages/tienda.html"> 
+                <img src="./assets/img/Tienda (1).png" class="card-img-top" alt="Tienda.">
+              <div class="card-body">
+                <h5 class="card-title">Tienda</h5>
+              </div>
+              </a>
+            </div>
+          </div>
         </section>
-    
     </main>
-    <footer class="footer container-fluid">
-        <div class="contenedorFooter">
+    <footer class="footer container-fluid mt-4">
+        <div class="contenedorFooter d-flex justify-content-around">
 
             <nav class="contenidos">
                 <h4>Contenidos</h4>
@@ -144,7 +136,7 @@
             </section>
         </div>
         <hr>
-        <div class="copy">
+        <div class="copy small">
                     <p>© Copyright 2024 El Mundo de Menta - Todos los derechos reservados.
                         Todos los logos, productos, marcas y nombres aqui utilizados son propiedad registrada.</p>
         </div>
