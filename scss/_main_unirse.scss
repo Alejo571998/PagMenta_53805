@@ -1,0 +1,18 @@
+.mainUnirse{
+    background-color: $color-secundario;
+    .bgUnirse{
+        color: $color-secundario;
+        height: $h-250px;
+        background-image: url(../assets/img/unirse.jpg);
+        background-size: cover;
+        background-position: bottom;
+    }
+    .contenedorComunicate{
+        color: $color-secundario;
+        height: $h-250px;
+        background-image: url(../assets/img/fondocanva.jpg);
+        background-size: cover;
+        background-position: center;
+
+    }
+}

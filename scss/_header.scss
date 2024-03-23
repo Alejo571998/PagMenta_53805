@@ -1,0 +1,64 @@
+$vista:mobile;
+$vista:desktop;
+
+
+.header{ 
+         @if $vista == desktop {
+            @media only screen and (min-width:768px){
+                color: $color-secundario;
+                height: 100vh;
+                background-image: url(../assets/img/elmundo.jpg);
+                background-size: cover;
+                background-position: center;
+                .tituloPrincipal{
+                text-shadow: 1px 1px 10px $color-y-borde-negro;
+                }
+                .navbar-light{
+                    .navbar-nav{
+                        .nav-link.colorNav{
+                            color: $color-link-primario;
+                            &:hover{
+                                color:$color-link-secundario;
+                                }
+                        }
+                        .nav-link.colorNavC{
+                            color: $color-nav;
+                            &:hover{
+                                color:$color-link-secundario;
+                                }
+                        }
+                     }
+                }   
+            }
+        }@else if $vista == mobile {
+            @media only screen and (max-width:767px){
+                color: $color-secundario;
+                height: 30vh;
+                background-image: url(../assets/img/elmundo.jpg);
+                background-size: cover;
+                background-position: center;
+                .tituloPrincipal{
+                text-shadow: 1px 1px 10px $color-y-borde-negro;
+                }
+                .navbar-light{
+                    .navbar-nav{
+                        .nav-link.colorNav{
+                            color:$color-link-primario;
+                            &:hover{
+                                color: $color-link-secundario;
+                                }
+                        }
+                        .nav-link.colorNavC{
+                            color: $color-nav;
+                            &:hover{
+                                color: $color-link-secundario;
+                                }
+                        }
+                    }
+                }   
+            }
+            
+        }
+}
+
+

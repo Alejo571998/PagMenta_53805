@@ -1,0 +1,19 @@
+.headerDemas{
+    background-color: $color-principal;
+    .navbar-light{
+        .navbar-nav{
+            .nav-link.colorNav{
+                color:$color-link-primario;
+                &:hover{
+                    color:$color-link-secundario;
+                }
+            }
+            .nav-link.colorNavC{
+                color: $color-nav;
+                &:hover{
+                    color:$color-link-secundario;
+                }
+            }
+        }
+    }
+}

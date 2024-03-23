@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{ 
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Albert Sans', sans-serif;
+    color: black;
+    font-size: 1.1rem;
+    background-color: rgb(18, 18, 18);
+}
+a{
+    list-style: none;
+    text-decoration: none;
+    
+}
+h1{
+    text-shadow: 1px 1px 10px rgb(0, 65, 4);
+}
+h2{
+    color: rgb(45, 45, 45);
+    text-shadow: 1px 1px 10px white;
+}
+h4{
+    color: #000000;
+    text-shadow: 1px 1px 10px black;  
+}
+.nav-link{
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #00ff04;
+    text-decoration: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+    .nav-link:hover, .nav-link:focus {
+        color: #ffffff;
+      }
+}
+
+.header{
+    color: rgb(206, 206, 206);
+    height: 100vh;
+    background-image: url(../assets/img/elmundo.jpg);
+    background-size: cover;
+    background-position: center;
+    .tituloPrincipal{
+        text-shadow: 1px 1px 10px black;
+    }
+}
+.headerDemas{
+    background-color:  rgb(45, 45, 45);
+}
+.navbar-light.bgHeader{
+    .navbar-nav{
+        .nav-link.colorNav{
+            color: #00ff04;
+            &:hover{
+                color: #7dfc95;
+            }
+        }
+        .nav-link.colorNavC{
+            color: #d2d2d2;
+            &:hover{
+                color: #7dfc95;
+            }
+        }
+    }
+}
+.mainIndex{
+    color: rgb(206, 206, 206);
+    background-color: rgb(45, 45, 45);
+    .seccionCarrusel{
+        .tituloCarrusel{
+            font-size: 1.5rem;
+        font-weight: 700;
+        }
+        .subTituloCarrusel{
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+        
+    }
+}
+.mainYo{
+    color: rgb(206, 206, 206);
+    background-color: rgb(45, 45, 45);
+    .bgYo{
+        color: rgb(206, 206, 206);
+        height: 250px;
+        background-image: url(../assets/img/fondoYo.jpg);
+        background-size: cover;
+        background-position: bottom;
+    }
+  
+}
+.mainTienda{
+    color: rgb(206, 206, 206);
+    background-color: rgb(45, 45, 45);
+    .bgTiendaMenta{
+        color: rgb(206, 206, 206);
+        height: 250px;
+        background-image: url(../assets/img/fondo_tienda.jpg);
+        background-size: cover;
+        background-position: bottom;
+
+    }
+}
+.mainUnirse{
+    background-color: rgb(255, 255, 255);
+    .bgUnirse{
+        color: rgb(206, 206, 206);
+        height: 250px;
+        background-image: url(../assets/img/unirse.jpg);
+        background-size: cover;
+        background-position: bottom;
+    }
+    .contenedorComunicate{
+        color: rgb(206, 206, 206);
+        height: 250px;
+        background-image: url(../assets/img/fondocanva.jpg);
+        background-size: cover;
+        background-position: center;
+
+    }
+}
+.mainStreaming{
+    color: rgb(206, 206, 206);
+    background-color: rgb(45, 45, 45);
+    .bgStreaming{
+        color: rgb(206, 206, 206);
+        height: 250px;
+        background-image: url(../assets/img/Streaming.jpg);
+        background-size: cover;
+        background-position: center;
+        .tarjetaTwitch{
+            color: #000000;
+            text-shadow: 2px 1px 10px #6b01ff;
+            
+        }
+    }
+
+}
+.footer{
+        font-size: 0.8rem;
+        font-weight: 700;
+        .linkDondeIr{
+            .iconos{
+                color: #00ff04;
+                
+            }
+        }
+        .IconoTwitch{
+            color: purple;
+            font-size: 4rem;
+            position: fixed;
+            bottom: 60px;
+            right: 10px;
+        }
+        .contenidos{
+            .navFooter{
+                color:  rgb(206, 206, 206);
+                &:hover{
+                    color: #00ff2f;
+                }
+            }
+        }
+        .copy{
+            color: #515251;
+            font-size: 0.8rem;
+        }     
+}
+   
+.btn-primary {
+    color: #ffffff;
+    background-color: #0d6dfd00;
+    border-color: #11ff00;
+    &:hover {
+        color: #000000;
+        background-color: #00ff26;
+        border-color: #000000;
+      }  
+}
+.btn-secondary {
+    color: #000000;
+    background-color: #0d6dfd00;
+    border-color: #11ff00;
+    &:hover {
+        color: #000000;
+        background-color: #00ff26;
+        border-color: #000000;
+      }  
+}
+.btn-info{
+    color: #000000;
+    background-color: #6b01ff;
+    border-color: #000000;
+    &:hover {
+        color: #000000;
+        background-color: #00000000;
+        border-color:#6b01ff;
+      }  
+}
+

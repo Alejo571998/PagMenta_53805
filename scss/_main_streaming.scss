@@ -1,0 +1,17 @@
+.mainStreaming{
+    color: $color-secundario;
+    background-color: $color-principal;
+    .bgStreaming{
+        color: $color-secundario;
+        height: $h-250px;
+        background-image: url(../assets/img/Streaming.jpg);
+        background-size: cover;
+        background-position: center;
+        .tarjetaTwitch{
+            color: $color-y-borde-negro;
+            text-shadow: 2px 1px 10px $twitch;
+            
+        }
+    }
+
+}

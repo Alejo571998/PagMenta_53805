@@ -1,0 +1,15 @@
+.mainIndex{
+    color: $color-secundario;
+    background-color:$color-principal;
+    .seccionCarrusel{
+        .tituloCarrusel{
+            font-size: 1.5rem;
+        font-weight: 700;
+        }
+        .subTituloCarrusel{
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+        
+    }
+}
