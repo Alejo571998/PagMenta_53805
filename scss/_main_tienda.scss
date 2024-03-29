@@ -1,12 +1,73 @@
 .mainTienda{
+    background-image: linear-gradient(to top, #00ff04, #00df1d, #00bf25, #00a127, #008326, #00864a, #008765, #008779, #51a4ae, #96bfd4, #d3dcec, #ffffff);
     color: $color-secundario;
-    background-color: $color-principal;
     .bgTiendaMenta{
         color: $color-secundario;
         height: $h-250px;
-        background-image: url(../assets/img/fondo_tienda.jpg);
+        background:linear-gradient(to bottom, #00000098,#00000098), url(../assets/img/fondo_tienda.jpg);
         background-size: cover;
         background-position: bottom;
 
     }
+    .remera{
+        overflow: hidden;
+        img{
+            transition: transform 1s ease;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+        .icons {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+          }
+          
+        .icons a {
+            margin: 2px;
+            opacity: 0;
+            -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+          }
+          
+        .icons a i {
+            display: block;
+            font-size: 23.52941176px;
+            line-height: 40px;
+            width: 40px;
+            background-color: #ffffff;
+            text-align: center;
+            color: #000000;
+          }
+          
+        .icons a i:hover {
+            background-color: $color-link-primario;
+            color:$color-principal;
+            cursor: pointer;
+          }
+          
+        &:hover a,
+        .hover a {
+            opacity: 1;
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+        }
+        img{
+            transition: transform 1s ease;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
 }
+  
+  
+  
+  
+  

@@ -3,47 +3,141 @@ a{
     text-decoration: none;
     
 }
+
 h1{
-    text-shadow: 1px 1px 10px rgb(0, 65, 4);
+    color: white;
+    text-shadow: 1px 1px 10px gray;
 }
 h2{
     color: $color-principal;
     text-shadow: 1px 1px 10px white;
 }
-h4{
-    color:$color-y-borde-negro;
-    text-shadow: 1px 1px 10px $color-y-borde-negro;  
+h3,h4,h5,p{
+    color:rgb(250, 250, 250);
+    text-shadow: 1px 1px 10px black;  
+}
+.ov-btn-grow-ellipse {
+    background: #ffffff00; 
+    color:$color-secundario; 
+    border: 2px solid $color-link-secundario;
+    padding: 16px 20px;
+    border-radius: 15px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+  }
+  .ov-btn-grow-ellipse:hover {
+    color: black;
+  }
+  .ov-btn-grow-ellipse::after {
+    content: "";
+    background: $color-link-primario;
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    border-radius: 50%;
+    left: -50%;
+    right: -50%;
+    top: -150%;
+    bottom: -150%;
+    transform: scale(0, 0);
+    transition: all 0.4s ease;
+  }
+  .ov-btn-grow-ellipse:hover::after {
+    transition: all 0.6s ease-out;
+    transform: scale(1, 1);
+}
+.botonSecundario {
+    background-color: $color-link-primario;
+    border: none;
+    color: $color-principal;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1em;
+    font-size: 22px;
+    line-height: 1em;
+    margin: 15px 40px;
+    outline: none;
+    padding: 12px 40px 10px;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  
+  .botonSecundario:before,
+  .botonSecundario:after {
+    border-color: transparent;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+    border-style: solid;
+    border-width: 0;
+    content: "";
+    height: 24px;
+    position: absolute;
+    width: 24px;
+  }
+  
+  .botonSecundario:before {
+    border-color: $color-link-secundario;
+    border-top-width: 2px;
+    left: 0px;
+    top: -5px;
+  }
+  
+  .botonSecundario:after {
+    border-bottom-width: 2px;
+    border-color: $color-link-secundario;
+    bottom: -5px;
+    right: 0px;
+  }
+  
+  .botonSecundario:hover,
+  .botonSecundario.hover {
+    color: $color-principal;
+    background-color: $color-link-primario;
+  }
+  
+  .botonSecundario:hover:before,
+  .botonSecundario.hover:before,
+  .botonSecundario:hover:after,
+  .botonSecundario.hover:after {
+    height: 100%;
+    width: 100%;
+}
+.botonStreaming {
+  background: #ffffff00; 
+  color:black; 
+  border: 2px solid $color-link-secundario;
+  padding: 16px 20px;
+  border-radius: 15px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-block;
+}
+.botonStreaming:hover {
+  color: black;
+}
+.botonStreaming::after {
+  content: "";
+  background: $color-link-primario;
+  position: absolute;
+  z-index: -1;
+  padding: 16px 20px;
+  display: block;
+  border-radius: 50%;
+  left: -50%;
+  right: -50%;
+  top: -150%;
+  bottom: -150%;
+  transform: scale(0, 0);
+  transition: all 0.4s ease;
+}
+.botonStreaming:hover::after {
+  transition: all 0.6s ease-out;
+  transform: scale(1, 1);
 }
 
-
-.btn-primary {
-    color: #ffffff;
-    background-color: #00000000;
-    border-color: $borde-verde;
-    &:hover {
-        color: $color-y-borde-negro;
-        background-color: $borde-verde;
-        border-color: $color-y-borde-negro;
-      }  
-}
-.btn-secondary {
-    color: $color-y-borde-negro;
-    background-color: #00000000;
-    border-color:  $borde-verde;
-    &:hover {
-        color: $color-y-borde-negro;
-        background-color: $borde-verde;
-        border-color: $color-y-borde-negro;
-      }  
-}
-.btn-info{
-    color: $color-y-borde-negro;
-    background-color:$twitch;
-    border-color: $color-y-borde-negro;
-    &:hover {
-        color: $color-y-borde-negro;
-        background-color:  #7418f5;
-        border-color:$twitch;
-      }  
-}
 

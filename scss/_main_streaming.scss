@@ -1,17 +1,35 @@
 .mainStreaming{
+    background-image: linear-gradient(to top, #00ff04, #00df1d, #00bf25, #00a127, #008326, #00864a, #008765, #008779, #51a4ae, #96bfd4, #d3dcec, #ffffff);
     color: $color-secundario;
-    background-color: $color-principal;
     .bgStreaming{
         color: $color-secundario;
         height: $h-250px;
-        background-image: url(../assets/img/Streaming.jpg);
+        background:linear-gradient(to bottom, #00000078,#00000078), url(../assets/img/stream.jpg);
         background-size: cover;
         background-position: center;
         .tarjetaTwitch{
-            color: $color-y-borde-negro;
+            color: $color-principal;
             text-shadow: 2px 1px 10px $twitch;
             
         }
     }
 
+}
+
+@media screen and (max-width: 480px) {
+    .video {
+      width: 100%;
+      height: auto; 
+    }
+  }
+
+.redes{
+        filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.5));
+        transition: transofrm 5s ease;
+        &:hover{
+        transform: scale(1.1);
+        }
+}
+.bg-cards{
+    background-color: #111111;
 }

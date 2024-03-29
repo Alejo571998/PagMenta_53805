@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
 * {
   margin: 0;
   padding: 0;
@@ -19,7 +20,8 @@ a {
 }
 
 h1 {
-  text-shadow: 1px 1px 10px rgb(0, 65, 4);
+  color: white;
+  text-shadow: 1px 1px 10px gray;
 }
 
 h2 {
@@ -27,88 +29,212 @@ h2 {
   text-shadow: 1px 1px 10px white;
 }
 
-h4 {
-  color: #000000;
-  text-shadow: 1px 1px 10px #000000;
+h3, h4, h5, p {
+  color: rgb(250, 250, 250);
+  text-shadow: 1px 1px 10px black;
 }
 
-.btn-primary {
-  color: #ffffff;
-  background-color: rgba(0, 0, 0, 0);
-  border-color: #00ff26;
-}
-.btn-primary:hover {
-  color: #000000;
-  background-color: #00ff26;
-  border-color: #000000;
-}
-
-.btn-secondary {
-  color: #000000;
-  background-color: rgba(0, 0, 0, 0);
-  border-color: #00ff26;
-}
-.btn-secondary:hover {
-  color: #000000;
-  background-color: #00ff26;
-  border-color: #000000;
+.ov-btn-grow-ellipse {
+  background: rgba(255, 255, 255, 0);
+  color: rgb(206, 206, 206);
+  border: 2px solid #069a21;
+  padding: 16px 20px;
+  border-radius: 15px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-block;
 }
 
-.btn-info {
-  color: #000000;
-  background-color: #6b01ff;
-  border-color: #000000;
-}
-.btn-info:hover {
-  color: #000000;
-  background-color: #7418f5;
-  border-color: #6b01ff;
+.ov-btn-grow-ellipse:hover {
+  color: black;
 }
 
-@media only screen and (min-width: 768px) {
+.ov-btn-grow-ellipse::after {
+  content: "";
+  background: #00ff04;
+  position: absolute;
+  z-index: -1;
+  padding: 16px 20px;
+  display: block;
+  border-radius: 50%;
+  left: -50%;
+  right: -50%;
+  top: -150%;
+  bottom: -150%;
+  transform: scale(0, 0);
+  transition: all 0.4s ease;
+}
+
+.ov-btn-grow-ellipse:hover::after {
+  transition: all 0.6s ease-out;
+  transform: scale(1, 1);
+}
+
+.botonSecundario {
+  background-color: #00ff04;
+  border: none;
+  color: rgb(45, 45, 45);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1em;
+  font-size: 22px;
+  line-height: 1em;
+  margin: 15px 40px;
+  outline: none;
+  padding: 12px 40px 10px;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.botonSecundario:before,
+.botonSecundario:after {
+  border-color: transparent;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  border-style: solid;
+  border-width: 0;
+  content: "";
+  height: 24px;
+  position: absolute;
+  width: 24px;
+}
+
+.botonSecundario:before {
+  border-color: #069a21;
+  border-top-width: 2px;
+  left: 0px;
+  top: -5px;
+}
+
+.botonSecundario:after {
+  border-bottom-width: 2px;
+  border-color: #069a21;
+  bottom: -5px;
+  right: 0px;
+}
+
+.botonSecundario:hover,
+.botonSecundario.hover {
+  color: rgb(45, 45, 45);
+  background-color: #00ff04;
+}
+
+.botonSecundario:hover:before,
+.botonSecundario.hover:before,
+.botonSecundario:hover:after,
+.botonSecundario.hover:after {
+  height: 100%;
+  width: 100%;
+}
+
+.botonStreaming {
+  background: rgba(255, 255, 255, 0);
+  color: black;
+  border: 2px solid #069a21;
+  padding: 16px 20px;
+  border-radius: 15px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.botonStreaming:hover {
+  color: black;
+}
+
+.botonStreaming::after {
+  content: "";
+  background: #00ff04;
+  position: absolute;
+  z-index: -1;
+  padding: 16px 20px;
+  display: block;
+  border-radius: 50%;
+  left: -50%;
+  right: -50%;
+  top: -150%;
+  bottom: -150%;
+  transform: scale(0, 0);
+  transition: all 0.4s ease;
+}
+
+.botonStreaming:hover::after {
+  transition: all 0.6s ease-out;
+  transform: scale(1, 1);
+}
+
+.header {
+  color: rgb(206, 206, 206);
+  height: 100vh;
+  background-image: url(../assets/img/elmundo.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.header .navbar-light .navbar-nav .nav-link.colorNav {
+  color: #00ff04;
+}
+.header .navbar-light .navbar-nav .nav-link.colorNav:hover {
+  color: #069a21;
+}
+.header .navbar-light .navbar-nav .nav-link.colorNavC {
+  color: #d2d2d2;
+}
+.header .navbar-light .navbar-nav .nav-link.colorNavC:hover {
+  color: #069a21;
+}
+.header .imagen {
+  filter: drop-shadow(10px 10px 10px rgb(0, 0, 0));
+}
+
+@media (max-width: 768px) {
   .header {
-    color: rgb(206, 206, 206);
-    height: 100vh;
+    height: 70vh;
     background-image: url(../assets/img/elmundo.jpg);
-    background-size: cover;
     background-position: center;
   }
   .header .tituloPrincipal {
-    text-shadow: 1px 1px 10px #000000;
+    text-shadow: 1px 1px 10px #00ff2a;
   }
   .header .navbar-light .navbar-nav .nav-link.colorNav {
     color: #00ff04;
   }
   .header .navbar-light .navbar-nav .nav-link.colorNav:hover {
-    color: #7dfc95;
+    color: #069a21;
+    background-size: cover;
   }
   .header .navbar-light .navbar-nav .nav-link.colorNavC {
     color: #d2d2d2;
   }
   .header .navbar-light .navbar-nav .nav-link.colorNavC:hover {
-    color: #7dfc95;
+    color: #069a21;
+    color: rgb(206, 206, 206);
   }
 }
-
 .headerDemas {
-  background-color: rgb(45, 45, 45);
+  background-image: linear-gradient(to right top, #878686, #646363, #424242, #242424, #000000);
 }
 .headerDemas .navbar-light .navbar-nav .nav-link.colorNav {
   color: #00ff04;
 }
 .headerDemas .navbar-light .navbar-nav .nav-link.colorNav:hover {
-  color: #7dfc95;
+  color: #069a21;
 }
 .headerDemas .navbar-light .navbar-nav .nav-link.colorNavC {
   color: #d2d2d2;
 }
 .headerDemas .navbar-light .navbar-nav .nav-link.colorNavC:hover {
-  color: #7dfc95;
+  color: #069a21;
+}
+.headerDemas .imagen {
+  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.675));
 }
 
 .mainIndex {
+  background-image: linear-gradient(to top, #00ff04, #00e021, #00c22a, #00a52d, #00882d, #007c44, #006e50, #006054, #155a61, #345361, #464c57, #494949);
   color: rgb(206, 206, 206);
-  background-color: rgb(45, 45, 45);
 }
 .mainIndex .seccionCarrusel .tituloCarrusel {
   font-size: 1.5rem;
@@ -119,32 +245,103 @@ h4 {
   font-weight: 700;
 }
 
+@media (max-width: 768px) {
+  #carouselExampleControls {
+    width: 100% !important;
+    margin: auto;
+  }
+  #carouselExampleControls .carousel-inner .carousel-item img {
+    width: 100%;
+    height: auto;
+  }
+}
+.imagen img {
+  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
+  transition: transofrm 5s ease;
+}
+.imagen img:hover {
+  transform: scale(1.1);
+}
+
 .mainYo {
+  background-image: linear-gradient(to top, #00ff04, #00df1d, #00bf25, #00a127, #008326, #00864a, #008765, #008779, #51a4ae, #96bfd4, #d3dcec, #ffffff);
   color: rgb(206, 206, 206);
   background-color: rgb(45, 45, 45);
 }
 .mainYo .bgYo {
   color: rgb(206, 206, 206);
   height: 250px;
-  background-image: url(../assets/img/fondoYo.jpg);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4705882353), rgba(0, 0, 0, 0.4705882353)), url(../assets/img/fondoio.jpg);
   background-size: cover;
   background-position: bottom;
 }
 
 .mainTienda {
+  background-image: linear-gradient(to top, #00ff04, #00df1d, #00bf25, #00a127, #008326, #00864a, #008765, #008779, #51a4ae, #96bfd4, #d3dcec, #ffffff);
   color: rgb(206, 206, 206);
-  background-color: rgb(45, 45, 45);
 }
 .mainTienda .bgTiendaMenta {
   color: rgb(206, 206, 206);
   height: 250px;
-  background-image: url(../assets/img/fondo_tienda.jpg);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5960784314), rgba(0, 0, 0, 0.5960784314)), url(../assets/img/fondo_tienda.jpg);
   background-size: cover;
   background-position: bottom;
 }
+.mainTienda .remera {
+  overflow: hidden;
+}
+.mainTienda .remera img {
+  transition: transform 1s ease;
+}
+.mainTienda .remera img:hover {
+  transform: scale(1.1);
+}
+.mainTienda .remera .icons {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.mainTienda .remera .icons a {
+  margin: 2px;
+  opacity: 0;
+  -webkit-transform: translateY(50%);
+  transform: translateY(50%);
+}
+.mainTienda .remera .icons a i {
+  display: block;
+  font-size: 23.52941176px;
+  line-height: 40px;
+  width: 40px;
+  background-color: #ffffff;
+  text-align: center;
+  color: #000000;
+}
+.mainTienda .remera .icons a i:hover {
+  background-color: #00ff04;
+  color: rgb(45, 45, 45);
+  cursor: pointer;
+}
+.mainTienda .remera:hover a,
+.mainTienda .remera .hover a {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+.mainTienda .remera img {
+  transition: transform 1s ease;
+}
+.mainTienda .remera img:hover {
+  transform: scale(1.1);
+}
 
 .mainUnirse {
-  background-color: rgb(206, 206, 206);
+  background-image: linear-gradient(to top, #00ff04, #00e021, #00c22a, #00a52d, #00882d, #007c44, #006e50, #006054, #155a61, #345361, #464c57, #494949);
 }
 .mainUnirse .bgUnirse {
   color: rgb(206, 206, 206);
@@ -162,19 +359,37 @@ h4 {
 }
 
 .mainStreaming {
+  background-image: linear-gradient(to top, #00ff04, #00df1d, #00bf25, #00a127, #008326, #00864a, #008765, #008779, #51a4ae, #96bfd4, #d3dcec, #ffffff);
   color: rgb(206, 206, 206);
-  background-color: rgb(45, 45, 45);
 }
 .mainStreaming .bgStreaming {
   color: rgb(206, 206, 206);
   height: 250px;
-  background-image: url(../assets/img/Streaming.jpg);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4705882353), rgba(0, 0, 0, 0.4705882353)), url(../assets/img/stream.jpg);
   background-size: cover;
   background-position: center;
 }
 .mainStreaming .bgStreaming .tarjetaTwitch {
-  color: #000000;
+  color: rgb(45, 45, 45);
   text-shadow: 2px 1px 10px #6b01ff;
+}
+
+@media screen and (max-width: 480px) {
+  .video {
+    width: 100%;
+    height: auto;
+  }
+}
+.redes {
+  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
+  transition: transofrm 5s ease;
+}
+.redes:hover {
+  transform: scale(1.1);
+}
+
+.bg-cards {
+  background-color: #111111;
 }
 
 .footer {
@@ -182,20 +397,67 @@ h4 {
   font-weight: 700;
 }
 .footer .linkDondeIr .iconos {
+  position: relative;
+  font-size: 40px;
+  color: #e6e6e6;
+  width: 75px;
+  margin: 40px;
+  height: 75px;
+  line-height: 75px;
+  display: inline-block;
+  text-align: center;
+  -webkit-perspective: 50em;
+  perspective: 50em;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.footer .linkDondeIr .iconos:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: 2px solid #e6e6e6;
+  content: "";
+  z-index: -1;
+  border-radius: 50%;
+}
+.footer .linkDondeIr .iconos:before {
+  color: #fff;
+}
+.footer .linkDondeIr .iconos:before,
+.footer .linkDondeIr .iconos:after {
+  -webkit-transition: all 0.45s ease-in-out;
+  transition: all 0.45s ease-in-out;
+}
+.footer .linkDondeIr .iconos:hover,
+.footer .linkDondeIr .iconos:active,
+.footer .linkDondeIr .iconos.hover {
   color: #00ff04;
 }
-.footer .IconoTwitch {
+.footer .linkDondeIr .iconos:hover:after,
+.footer .linkDondeIr .iconos:active:after,
+.footer .linkDondeIr .iconos.hover:after {
+  border-color: transparent #069a21;
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+.footer .iconoTwitch {
   color: #6b01ff;
   font-size: 4rem;
   position: fixed;
   bottom: 60px;
   right: 10px;
 }
+.footer .iconoTwitch:hover {
+  color: rgb(45, 45, 45);
+}
 .footer .contenidos .navFooter {
   color: rgb(206, 206, 206);
 }
 .footer .contenidos .navFooter:hover {
-  color: #7dfc95;
+  color: #069a21;
 }
 .footer .copy {
   color: #626262;
