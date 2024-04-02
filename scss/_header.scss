@@ -27,11 +27,17 @@ $vista:desktop;
     .imagen{
         filter: drop-shadow(10px 10px 10px rgb(0, 0, 0))
     }
+    .hamgurguesa {
+        color: white;
+        border-radius: 20%;
+        border-color: white; 
+        background-color: transparent; 
+    }
 }
 
 @media (max-width: 768px) {
     .header{
-        height: 70vh;
+        height: 50vh;
         background-image: url(../assets/img/elmundo.jpg);
         background-position: center;
         .tituloPrincipal{

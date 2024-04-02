@@ -1,3 +1,4 @@
+/*MAP GET*/
 @import url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
 * {
@@ -29,7 +30,7 @@ h2 {
   text-shadow: 1px 1px 10px white;
 }
 
-h3, h4, h5, p {
+h3, h4 {
   color: rgb(250, 250, 250);
   text-shadow: 1px 1px 10px black;
 }
@@ -166,6 +167,13 @@ h3, h4, h5, p {
   transform: scale(1, 1);
 }
 
+.titulosPag {
+  transition: transform 1s ease;
+}
+.titulosPag:hover {
+  transform: scale(1.1);
+}
+
 .header {
   color: rgb(206, 206, 206);
   height: 100vh;
@@ -188,10 +196,16 @@ h3, h4, h5, p {
 .header .imagen {
   filter: drop-shadow(10px 10px 10px rgb(0, 0, 0));
 }
+.header .hamgurguesa {
+  color: white;
+  border-radius: 20%;
+  border-color: white;
+  background-color: transparent;
+}
 
 @media (max-width: 768px) {
   .header {
-    height: 70vh;
+    height: 50vh;
     background-image: url(../assets/img/elmundo.jpg);
     background-position: center;
   }
@@ -231,6 +245,12 @@ h3, h4, h5, p {
 .headerDemas .imagen {
   filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.675));
 }
+.headerDemas .hamgurguesa {
+  color: white;
+  border-radius: 20%;
+  border-color: white;
+  background-color: transparent;
+}
 
 .mainIndex {
   background-image: linear-gradient(to top, #00ff04, #00e021, #00c22a, #00a52d, #00882d, #007c44, #006e50, #006054, #155a61, #345361, #464c57, #494949);
@@ -244,6 +264,13 @@ h3, h4, h5, p {
   font-size: 1.2rem;
   font-weight: 700;
 }
+.mainIndex .imagen img {
+  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
+  transition: transofrm 5s ease;
+}
+.mainIndex .imagen img:hover {
+  transform: scale(1.1);
+}
 
 @media (max-width: 768px) {
   #carouselExampleControls {
@@ -255,25 +282,24 @@ h3, h4, h5, p {
     height: auto;
   }
 }
-.imagen img {
-  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
-  transition: transofrm 5s ease;
-}
-.imagen img:hover {
-  transform: scale(1.1);
-}
-
 .mainYo {
   background-image: linear-gradient(to top, #00ff04, #00df1d, #00bf25, #00a127, #008326, #00864a, #008765, #008779, #51a4ae, #96bfd4, #d3dcec, #ffffff);
-  color: rgb(206, 206, 206);
+  background-color: rgb(206, 206, 206);
   background-color: rgb(45, 45, 45);
 }
 .mainYo .bgYo {
-  color: rgb(206, 206, 206);
+  background-color: rgb(206, 206, 206);
   height: 250px;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4705882353), rgba(0, 0, 0, 0.4705882353)), url(../assets/img/fondoio.jpg);
   background-size: cover;
   background-position: bottom;
+}
+.mainYo .contenedorOrigen {
+  background-color: rgba(0, 0, 0, 0.294);
+}
+.mainYo .texto {
+  font-weight: 600;
+  font-size: 18px;
 }
 
 .mainTienda {
@@ -315,7 +341,7 @@ h3, h4, h5, p {
 }
 .mainTienda .remera .icons a i {
   display: block;
-  font-size: 23.52941176px;
+  font-size: 23px;
   line-height: 40px;
   width: 40px;
   background-color: #ffffff;
@@ -338,6 +364,14 @@ h3, h4, h5, p {
 }
 .mainTienda .remera img:hover {
   transform: scale(1.1);
+}
+.mainTienda .parrafoSub {
+  color: white;
+}
+@media (max-width: 576px) {
+  .mainTienda .parrafoSub {
+    color: black;
+  }
 }
 
 .mainUnirse {
@@ -373,23 +407,37 @@ h3, h4, h5, p {
   color: rgb(45, 45, 45);
   text-shadow: 2px 1px 10px #6b01ff;
 }
-
-@media screen and (max-width: 480px) {
-  .video {
-    width: 100%;
-    height: auto;
-  }
-}
-.redes {
+.mainStreaming .redes {
   filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
   transition: transofrm 5s ease;
 }
-.redes:hover {
+.mainStreaming .redes:hover {
   transform: scale(1.1);
 }
-
-.bg-cards {
+.mainStreaming .bg-cards {
   background-color: #111111;
+}
+.mainStreaming .contenedorStreaming {
+  background-color: rgba(255, 255, 255, 0.294);
+}
+.mainStreaming .tarjetaStreaming {
+  background-color: rgba(0, 0, 0, 0);
+  line-height: 1.2;
+}
+.mainStreaming video {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+@media (max-width: 576px) {
+  .mainStreaming .video {
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .mainStreaming .parrafoSub {
+    color: black;
+  }
 }
 
 .footer {

@@ -1,0 +1,10 @@
+@mixin tipo-de-color($color) {
+    background-color: $color;
+  }
+@mixin background-properties($size, $position){ 
+    background-size: $size;
+    background-position: $position;
+}
+
+
+

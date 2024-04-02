@@ -4,8 +4,7 @@
         color: $color-secundario;
         height: $h-250px;
         background-image: url(../assets/img/unirse.jpg);
-        background-size: cover;
-        background-position: bottom;
+        @include background-properties($bg-size, $bg-posicion);
     }
     .contenedorComunicate{
         color: $color-secundario;

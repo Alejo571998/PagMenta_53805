@@ -1,14 +1,19 @@
 .mainYo{
     background-image: linear-gradient(to top, #00ff04, #00df1d, #00bf25, #00a127, #008326, #00864a, #008765, #008779, #51a4ae, #96bfd4, #d3dcec, #ffffff);
-    color: $color-secundario;
+    @include tipo-de-color($color-secundario);
     background-color: $color-principal;
     .bgYo{
-        color: $color-secundario;
+        @include tipo-de-color($color-secundario);
         height: $h-250px;
         background:linear-gradient(to bottom, #00000078,#00000078), url(../assets/img/fondoio.jpg);
-        background-size: cover;
-        background-position: bottom;
+        @include background-properties($bg-size, $bg-posicion);
     }
-    
+    .contenedorOrigen{
+        background-color: rgba(0, 0, 0, 0.294);
+    }
+    .texto{
+        font-weight: 600;
+        font-size: 18px;
+    }
 }
 

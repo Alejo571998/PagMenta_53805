@@ -51,11 +51,11 @@
           }
     }
     .iconoTwitch{
-        color: $twitch;
-        font-size: 4rem;
-        position: fixed;
-        bottom: 60px;
-        right: 10px;
+        color: map-get($icono-twitch, color);
+        font-size: map-get($icono-twitch, fuente);
+        position: map-get($icono-twitch , posicion );
+        bottom: map-get($icono-twitch, abajo );
+        right: map-get($icono-twitch, derecha );
         &:hover{
             color: $color-principal;
         }

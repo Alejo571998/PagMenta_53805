@@ -11,6 +11,17 @@
                 font-weight: 700;
             }
     }
+    .imagen{
+      img{
+          filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.5));
+          transition: transofrm 5s ease;
+          &:hover{
+          transform: scale(1.1);
+          }
+      }
+      
+  }
+  
 }
 @media (max-width: 768px) {
     #carouselExampleControls {
@@ -23,15 +34,5 @@
       height: auto; 
     }
   }
-.imagen{
-    img{
-        filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.5));
-        transition: transofrm 5s ease;
-        &:hover{
-        transform: scale(1.1);
-        }
-    }
-    
-}
 
 

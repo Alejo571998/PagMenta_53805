@@ -11,3 +11,21 @@ body{
     overflow-x: hidden;
     max-width: 100%;
 }
+a{
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+h1{
+    color: white;
+    text-shadow: 1px 1px 10px gray;
+}
+h2{
+    color: $color-principal;
+    text-shadow: 1px 1px 10px white;
+}
+h3,h4{
+    color:rgb(250, 250, 250);
+    text-shadow: 1px 1px 10px black;  
+}

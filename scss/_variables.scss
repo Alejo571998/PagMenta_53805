@@ -7,3 +7,14 @@ $twitch:  #6b01ff;
 $color-y-borde: #00ff2a;
 $color-nav:  #d2d2d2;
 $h-250px:250px;
+$bg-size: cover;
+$bg-posicion: bottom;
+
+/*MAP GET*/
+$icono-twitch:(
+    color: $twitch,
+    fuente: 4rem,
+    posicion: fixed,
+    abajo: 60px,
+    derecha: 10px,
+)

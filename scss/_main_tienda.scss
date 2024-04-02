@@ -5,9 +5,7 @@
         color: $color-secundario;
         height: $h-250px;
         background:linear-gradient(to bottom, #00000098,#00000098), url(../assets/img/fondo_tienda.jpg);
-        background-size: cover;
-        background-position: bottom;
-
+        @include background-properties($bg-size, $bg-posicion);
     }
     .remera{
         overflow: hidden;
@@ -27,31 +25,27 @@
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
-          }
-          
+        }
         .icons a {
             margin: 2px;
             opacity: 0;
             -webkit-transform: translateY(50%);
             transform: translateY(50%);
-          }
-          
+        }
         .icons a i {
             display: block;
-            font-size: 23.52941176px;
+            font-size: 23px;
             line-height: 40px;
             width: 40px;
             background-color: #ffffff;
             text-align: center;
             color: #000000;
-          }
-          
+        }
         .icons a i:hover {
             background-color: $color-link-primario;
             color:$color-principal;
             cursor: pointer;
-          }
-          
+        }
         &:hover a,
         .hover a {
             opacity: 1;
@@ -65,9 +59,12 @@
             }
         }
     }
+    .parrafoSub{
+        color: white;
+    }
+    @media (max-width: 576px) {
+        .parrafoSub{
+        color: black;
+        }
+    }
 }
-  
-  
-  
-  
-  
