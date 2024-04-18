@@ -174,10 +174,14 @@ h3, h4 {
   transform: scale(1.1);
 }
 
+.bg-success {
+  background-image: linear-gradient(to top, #00ff04, #00e021, #00c22a, #00a52d, #00882d, #007c44, #006e50, #006054, #155a61, #345361, #464c57, #494949);
+}
+
 .header {
   color: rgb(206, 206, 206);
   height: 100vh;
-  background-image: url(../assets/img/elmundo.jpg);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("../assets/img/elmundo.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -201,6 +205,10 @@ h3, h4 {
   border-radius: 20%;
   border-color: white;
   background-color: transparent;
+}
+.header .contenidoGaming {
+  color: white;
+  text-shadow: 1px 1px 10px #00ff2a;
 }
 
 @media (max-width: 768px) {
@@ -271,6 +279,9 @@ h3, h4 {
 .mainIndex .imagen img:hover {
   transform: scale(1.1);
 }
+.mainIndex .bg-cards {
+  background-color: #111111;
+}
 
 @media (max-width: 768px) {
   #carouselExampleControls {
@@ -298,8 +309,13 @@ h3, h4 {
   background-color: rgba(0, 0, 0, 0.294);
 }
 .mainYo .texto {
+  text-align: justify;
   font-weight: 600;
   font-size: 18px;
+}
+.mainYo .subYo {
+  color: rgb(250, 250, 250);
+  text-shadow: 1px 1px 10px black;
 }
 
 .mainTienda {
@@ -418,7 +434,7 @@ h3, h4 {
   background-color: #111111;
 }
 .mainStreaming .contenedorStreaming {
-  background-color: rgba(255, 255, 255, 0.294);
+  background-color: rgba(49, 49, 49, 0.386);
 }
 .mainStreaming .tarjetaStreaming {
   background-color: rgba(0, 0, 0, 0);

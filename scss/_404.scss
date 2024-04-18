@@ -1,0 +1,28 @@
+.headerError{
+    background-image: linear-gradient(to right top, #878686, #646363, #424242, #242424, #000000);
+    .navbar-light{
+        .navbar-nav{
+            .nav-link.colorNav{
+                color:$color-link-primario;
+                &:hover{
+                    color:$color-link-secundario;
+                }
+            }
+            .nav-link.colorNavC{
+                color: $color-nav;
+                &:hover{
+                    color:$color-link-secundario;
+                }
+            }
+        }
+    }
+    .imagen{
+        filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.675))
+    }
+    .hamgurguesa {
+        color: white;
+        border-radius: 20%;
+        border-color: white; 
+        background-color: transparent; 
+    }
+}
